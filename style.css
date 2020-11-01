@@ -24,59 +24,81 @@ html,body{
     background-color: var(--Light-grayish-blue);
     }
 
-.container {
+.cards-wrapper {
     width: 100%;
     height: 100%;
     display: grid;
     grid-template-columns: 10px 200px 300px 200px 200px;
-    grid-template-rows:200px 200px; 
+    grid-template-rows:250px 250px; 
     grid-gap: 20px;
     justify-content: center;
     align-content: center;
 }
 
 .card-1 {
-    background-color: red;
     border-radius: 10px;
     grid-column-start: 2;
     grid-column-end: 4;
+    display: flex;
     
-    
-    
+    overflow-y: hidden;
 }
 .daniel-card {
     background-color: var(--Moderate-violet);
-    
+    height: 100%;
     width: 100%;
     display: flex;
     position: relative;
     
+    
 }
 .id-box {
     display: flex;
-    align-items: center;
-    width: 100%;
+    text-align: center;
+    align-content: center;
+    width: 50%;
     height:25%;
-    margin: 20px;
+    flex-wrap: wrap;
+    
 }
 .daniel-card img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    
+    margin: 20px;
     
 }
+
 .daniel-card h5 {
     color: var(--White);
-    font-size: 500;
-    padding: 20px;
+    font-weight: 500;
+    align-self:  center;
+    margin-top: 5px;
+    font-size: .7rem;
+    
    
 }
 
-.daniel-card p {
-    color: var(--White);
+.daniel-card .graduate {
+    color: var(--Light-gray);
     font-size: .5rem;
+    margin-left: 70px;
+    margin-top: -30px;
 }
+
+
+.card-header p {
+    color: var(--White);
+    font-weight: 600;
+}
+
+.card-body{
+    color: var(--Light-gray);
+    font-weight: 500;
+    font-size: .6rem;
+
+}
+
 
 .card-2 {
     background-color: var(--Very-dark-grayish-blue);
