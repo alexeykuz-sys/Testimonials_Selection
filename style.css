@@ -28,8 +28,8 @@ html,body{
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 10px 200px 300px 200px 200px;
-    grid-template-rows:250px 250px; 
+    grid-template-columns: 200px 300px 250px 200px;
+    grid-template-rows: repeat(2, 250px); 
     grid-gap: 20px;
     justify-content: center;
     align-content: center;
@@ -37,8 +37,8 @@ html,body{
 
 .card-1 {
     border-radius: 10px;
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
     display: flex;
     
     overflow-y: hidden;
@@ -52,7 +52,7 @@ html,body{
     
     
 }
-.id-box {
+.daniel-id-box {
     display: flex;
     text-align: center;
     align-content: center;
@@ -96,21 +96,66 @@ html,body{
     color: var(--Light-gray);
     font-weight: 500;
     font-size: .6rem;
-
 }
 
 
 .card-2 {
-    background-color: var(--Very-dark-grayish-blue);
+    display: flex;
+    overflow-y: hidden;
     border-radius: 10px;
-    grid-column-start: 4;
-    grid-column-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 3;
 }
+
+.jonathan-card {
+    background-color: var(--Very-dark-grayish-blue);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.jonathan-id-box {
+    display: flex;
+    text-align: center;
+    align-content: center;
+    width: auto;
+    height:auto;
+    flex-wrap: wrap;
+    
+}
+
+.jonathan-card img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 20px;
+    
+}
+
+.jonathan-card h5 {
+    color: var(--White);
+    font-weight: 500;
+    align-self:  center;
+    margin-top: 5px;
+    font-size: .7rem;
+    
+   
+}
+
+.jonathan-card .graduate {
+    color: var(--Light-gray);
+    font-size: .5rem;
+    margin-left: 70px;
+    margin-top: -30px;
+}
+
+
 .card-3 {
     background-color: var(--White);
     border-radius: 10px;
-    grid-column-start: 5;
-    grid-column-end: 7;
+    grid-column-start: 4;
+    grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 3;
 }
@@ -118,15 +163,15 @@ html,body{
 .card-4 {
     background-color:var(--White);
     border-radius: 10px;
-    grid-column-start: 2;
-    grid-column-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
 }
 
 .card-5 {
     background-color: var(--Very-dark-blackish-blue);
     border-radius: 10px;
-    grid-column-start: 3;
-    grid-column-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 4;
 }
 
 .attribution {
@@ -136,3 +181,18 @@ html,body{
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+
+@media (max-width:375px){
+    .cards-wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-flow: column;
+        
+    }
+
+}
+
