@@ -18,6 +18,53 @@ html,body{
     background-color: var(--Light-grayish-blue);
     }
 
+.container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100px 200px 300px 200px 200px;
+    grid-template-rows:200px 200px; 
+    grid-gap: 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+.card-1 {
+    background-color: red;
+    
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.card-2 {
+    background-color: black;
+    
+    grid-column-start: 4;
+    grid-column-end: 4;
+}
+.card-3 {
+    background-color: blue;
+    
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.card-4 {
+    background-color: yellow;
+    
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.card-5 {
+    background-color: palevioletred;
+    
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
