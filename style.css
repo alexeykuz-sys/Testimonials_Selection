@@ -353,7 +353,7 @@ body {
 @media (max-width: 767.98px) {@media (max-width: 767.98px) {
     .cards-wrapper {
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(auto, min-content);
+        grid-template-rows: repeat(5, min-content);
         height: auto;
         grid-gap:20px;
     }
@@ -382,7 +382,7 @@ body {
 @media (max-width: 575px) {
     .cards-wrapper {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(auto, fit-content);
+        grid-template-rows: repeat(5, min-content);
         justify-content: center;
         align-content: center;
         grid-gap:20px;
